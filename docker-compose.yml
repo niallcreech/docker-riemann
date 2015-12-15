@@ -1,0 +1,11 @@
+riemann:
+  build: ./riemann
+  net: host
+  ports:
+    - "5555:5555"
+    - "5555:5555/udp"
+    - "5556:5556"
+riemann-dash:
+  build: ./riemann-dash
+  ports:
+    - "4567:4567"
